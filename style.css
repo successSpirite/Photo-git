@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Glass+Antiqua&family=Macondo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:  #17506E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    
+    
+}
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      width: 100vw;
+      height: 100vh;
+      overflow-y: scroll;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+}
+
+.grid >*{
+    background-color: white;
+    border: 0.4em solid black;
+    border-radius: 1em;
+    width: 34em;
+    height: 40em;
+    margin: 1em 1em 0em 1em ;
+}
+.img{
+    position: relative;
+    height: 50%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.page{
+    height: 50%;
+    
+}
+.page h1, .page h2, footer h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.page h1{
+    font-size: calc(.8em + 1vw);
+    text-align: center;
+    text-transform: capitalize;
+    margin: .4em 0 .4em 0;
+}
+.page h2{
+    margin: 0em 0 0 0 ;
+    text-align: end;
+}
+.page p{
+    text-align: justify;
+    font-size: calc(.8em + 1vw);
+    text-transform: capitalize;
+    margin: 0 1em 0 1em;
+    font-family: "Edu QLD Beginner", cursive;
+    font-style: normal;
+    
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-around;
+     flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   height: 100%;
+}
+/* .main-head:hover .nav-image{
+    opacity: 0.8;
+} */
+/* .main-head:hover .nav-image, .main-head:hover footer h1{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+nav:hover .nav-image{
+    background-color: black;
+    color: black;
+}
+footer:hover h1{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+} */
+/* .main-head:hover nav, .main-head:hover footer{
+    opacity: 1;
+} */
+
+/* .main-head:hover nav{
+    animation: fall-down 10s ease-in-out forwards;
+}
+
+.main-head:hover footer{
+    animation: rise-Up 10s ease-in-out forwards;
+}
+@keyframes fall-down{
+    0%{
+         transform: translateY(-100);
+         opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes rise-Up{
+    0%{
+        transform: translateY(100);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+nav, footer{
+    
+     /* opacity: 0;
+    transition: opacity 0.5s ease-in-out; */
+}
+footer{
+    margin: 0 1.2em 0 1.2em;
+  
+}
+nav div img{
+    width: 1.4em;
+    height: 1.4em;
+    background-color: white;
+}
+nav{
+    height: 13%; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    cursor: pointer;
+}
+.nav-image {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2em solid black; */
+    border-radius: 0.4em;
+}
+footer h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    /* border: 0.2em solid black; */
+    border-radius: 0.1em;
+    text-transform: uppercase;
+    font-size: calc(.9em + 1vw);
+   height: 1.6em;
+   cursor: pointer;
+}
+
+
+@media (max-width: 720px) {
+   .grid{
+    flex-wrap: wrap;
+   }
+   .grid .box2{
+    margin-bottom: 50em;
+   }
+   .grid >*{
+    width: 34em;
+    height: 38em;
+   }
+
+   .page h1{
+    font-size: 1.3em;
+   }
+   .page p{
+    margin-top: 1em ;
+    font-size: calc(1.1em + 1vw);
+   }
+}
