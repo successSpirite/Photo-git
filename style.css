@@ -90,58 +90,16 @@ img{
     width: 100%;
    height: 100%;
 }
-/* .main-head:hover .nav-image{
-    opacity: 0.8;
-} */
-/* .main-head:hover .nav-image, .main-head:hover footer h1{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+
+.main-head:hover nav, .main-head:hover footer{
     opacity: 1;
 }
-nav:hover .nav-image{
-    background-color: black;
-    color: black;
-}
-footer:hover h1{
-    background-color: black;
-    color: white;
-    cursor: pointer;
-} */
-/* .main-head:hover nav, .main-head:hover footer{
-    opacity: 1;
-} */
 
-/* .main-head:hover nav{
-    animation: fall-down 10s ease-in-out forwards;
-}
 
-.main-head:hover footer{
-    animation: rise-Up 10s ease-in-out forwards;
-}
-@keyframes fall-down{
-    0%{
-         transform: translateY(-100);
-         opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-@keyframes rise-Up{
-    0%{
-        transform: translateY(100);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-} */
 nav, footer{
     
-     /* opacity: 0;
-    transition: opacity 0.5s ease-in-out; */
+     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 footer{
     margin: 0 1.2em 0 1.2em;
@@ -165,8 +123,14 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 0.2em solid black; */
     border-radius: 0.4em;
+}
+.nav-image:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+footer h1:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
 }
 footer h1{
     display: flex;
